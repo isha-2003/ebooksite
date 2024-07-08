@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    background: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.login{
+    width: 800px;
+    min-height: 400px;
+    overflow: hidden;
+    border-radius: 5px;
+    background: #a43899;
+    display: flex;
+    box-shadow: 15px 5px 30px rgba(99, 62, 62, 0.3);
+}
+.content{
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #cd9bc5;
+    transition: 0.5s;
+}
+.content img{
+    width: 100%;
+}
+.content:hover img{
+    transform: scale(1.2);
+}
+.loginform{
+    flex-basis: 50%;
+    background: #d8cbd6;
+    font-family: roboto;
+    padding: 25px;
+
+}
+.loginform h1{
+    text-align: center;
+    margin-top: 25px;
+    font-size: 2.5em;
+    margin-bottom: 50px;
+     color: #fff;
+}
+.tbox{
+    border-radius: 3px;
+    background: transparent;
+    outline: none;
+    border: 1px solid #a43899;
+    width: 100%;
+    height: 35px;
+    margin: 30px 0;
+}
+.tbox input{
+    background: transparent;
+    width: 90%;
+    outline: none;
+    border: 0;
+    padding-left: 5px;
+
+}
+::placeholder{
+    color: #a43899;
+}
+.tbox i{
+    color: #da98c5;
+    font-size: 15px;
+    padding: 7px;
+}
+.btn{
+    width: 100%;
+    border: 0;
+    border-radius: 5px;
+    background: #d18fc3;
+    color: #a43899;
+    padding: 12px;
+    font-size: 18px;
+}
+.social{
+    margin-top: 25px;
+    list-style: none;
+    text-align: center;
+
+}
+.social li{
+    display: inline-block;
+
+}
+.social li i{
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+    border: 1px solid #d798d0;
+    border-radius: 50%;
+    font-size: 18px;
+    color: #a43899;
+}
+/****Responsive Design ****/
+@media(max-width:768px){
+    .login{
+        flex-direction: column;
+        margin: 0 15px;
+
+    }
+}
+main h1{
+    font-size: 30px;
+    color: #133B4F;
+    text-transform: uppercase;
+}
+
+main h2{
+    font-size: 20px;
+    color: #FCA70C;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+}
